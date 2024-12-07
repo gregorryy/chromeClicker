@@ -1,0 +1,56 @@
+* {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.blubBtn {
+  border: none;
+}
+
+.blub {
+  width: 250px;
+  height: 250px;
+}
+
+.blub:active {
+  width: 251px;
+  height: 251px;
+}
+
+.score {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.plus-one {
+  position: relative;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #11ff00;
+  animation: rise 1s ease forwards;
+  pointer-events: none;
+  opacity: 0;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-30px);
+    opacity: 0;
+  }
+}
